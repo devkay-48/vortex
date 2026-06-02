@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Vortex
+Comment=Download videos and music from the web
+Exec=vortex
+Icon=org.gnome.Vortex
+Terminal=false
+Type=Application
+Categories=Network;FileTransfer;AudioVideo;
+Keywords=youtube;download;video;music;audio;yt-dlp;
+StartupWMClass=org.gnome.Vortex

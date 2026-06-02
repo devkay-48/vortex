@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.gnome.Vortex</id>
+  <name>Vortex</name>
+  <summary>Download videos and music from the web</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <description>
+    <p>
+      Vortex is a native GNOME application for downloading videos and music
+      from YouTube, SoundCloud, and hundreds of other sites — powered by yt-dlp.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Paste any URL and preview title, thumbnail, and duration</li>
+      <li>Choose video quality or extract audio in MP3, M4A, FLAC, or Opus</li>
+      <li>Live progress bar with speed and ETA</li>
+      <li>Persistent settings: download folder, speed limit, browser cookies</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">org.gnome.Vortex.desktop</launchable>
+  <url type="homepage">https://github.com/example/vortex</url>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.0.0" date="2026-06-02">
+      <description><p>Initial release.</p></description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Main download page</caption>
+    </screenshot>
+  </screenshots>
+</component>

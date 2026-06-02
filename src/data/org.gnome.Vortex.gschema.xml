@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.Vortex" path="/org/gnome/Vortex/">
+
+    <!-- Output -->
+    <key name="download-folder" type="s">
+      <default>""</default>
+      <summary>Download folder path</summary>
+    </key>
+    <key name="filename-template" type="s">
+      <default>"%(title)s"</default>
+      <summary>yt-dlp filename template (no extension)</summary>
+    </key>
+    <key name="separate-folders" type="b">
+      <default>false</default>
+      <summary>Save music and video in separate subfolders</summary>
+    </key>
+
+    <!-- Network -->
+    <key name="speed-limit-enabled" type="b">
+      <default>false</default>
+      <summary>Enable download speed limit</summary>
+    </key>
+    <key name="speed-limit-kbps" type="i">
+      <default>1024</default>
+      <summary>Speed limit in KB/s</summary>
+    </key>
+    <key name="retry-count" type="i">
+      <default>10</default>
+      <summary>Number of retries on failure</summary>
+    </key>
+    <key name="proxy-url" type="s">
+      <default>""</default>
+      <summary>Proxy URL (leave blank to disable)</summary>
+    </key>
+
+    <!-- Authentication -->
+    <key name="cookie-source" type="s">
+      <default>"none"</default>
+      <summary>Browser to pull cookies from</summary>
+    </key>
+
+    <!-- Advanced -->
+    <key name="embed-metadata" type="b">
+      <default>true</default>
+      <summary>Embed metadata into downloaded files</summary>
+    </key>
+    <key name="embed-thumbnail" type="b">
+      <default>true</default>
+      <summary>Embed thumbnail into downloaded files</summary>
+    </key>
+    <key name="write-subtitles" type="b">
+      <default>false</default>
+      <summary>Download subtitles alongside video</summary>
+    </key>
+    <key name="subtitle-language" type="s">
+      <default>"en"</default>
+      <summary>Subtitle language code</summary>
+    </key>
+
+  </schema>
+</schemalist>
