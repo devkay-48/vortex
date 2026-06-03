@@ -1,6 +1,6 @@
 app-id: org.gnome.Vortex
 runtime: org.gnome.Platform
-runtime-version: '46'
+runtime-version: '50'
 sdk: org.gnome.Sdk
 command: vortex
 
@@ -16,16 +16,18 @@ modules:
   - name: yt-dlp
     buildsystem: simple
     build-commands:
-      - pip3 install --prefix=/app --no-build-isolation yt-dlp
+      - pip3 install --prefix=/app --no-index --find-links=. yt_dlp-2026.3.17-py3-none-any.whl
     sources:
-      - type: shell
-        commands:
-          - pip3 download --no-deps --dest . yt-dlp
+      - type: file
+        path: files/yt_dlp-2026.3.17-py3-none-any.whl
+        sha256: 32992db94303a8a5d211a183f2174834fe7f8c29d83ed2e7a324eae97a8f26d8
 
   - name: vortex
     buildsystem: meson
     config-opts:
       - --prefix=/app
+    post-install:
+      - glib-compile-schemas /app/share/glib-2.0/schemas/
     sources:
       - type: dir
         path: ..
